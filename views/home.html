@@ -7,23 +7,33 @@
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="/images/logo-mercado-Liebre.svg" alt = "Logo Mercado Liebre" width="200">
-        <input type="search" placeholder="Buscar productos, marcas" id="Buscador" />
-        <p><i class="fas fa-search"></i></p>
-        <p align="center"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
-            <ul>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo"> 
+            <div class="input-lupa">
+                <input type="search" placeholder="Buscar productos, marcas" id="Buscador" />
+                <i class="fas fa-search"></i>
+            </div>
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i> 
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>       
+        <a href="#" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class="left-bar">
                 <li type= none>Ofertas</li>
                 <li type= none>Tiendas Oficiales</li>
                 <li type= none>Vender</li>
                 <li type= none>Ayuda</li>
             </ul>
             <br>
-            <ul>
+            <ul class="right-bar">
                 <li type= none>Creá tu cuenta <i class="far fa-id-card"></i></li>
                 <li type= none>Ingresá <i class="fas fa-sign-in-alt"></i></li>
                 <li type= none>Mis Compras <i class="fas fa-shopping-basket"></i></li>
@@ -31,27 +41,23 @@
         </nav>
         <br>
         <br>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <br>
-        <br>
+        <img src="/images/img-home-banner.jpg" class="img-fiestas" alt = "Banner fiestas">
     </header>
     <main>
-        <section>
-            <h2 class = "titulares">Basado en tu última visita</h2>
-            <article>
+        <h2 class = "titulares">Basado en tu última visita</h2>
+        <section class="elementos-basados">            
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-cafetera-moulinex.jpg" alt = "Cafetera Moulinex" class="images">
                     <div>
                         <i class="fas fa-truck"></i>
                         <p class = "precios">$6.770</p>    
                         <p class = "descuento">40 % off</p>
-                        <p class = "descripcion">Cafetera Moulinex</p>
+                        <p class = "descripcion">Cafetera Moulinex</p>                        
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                 <img src="/images/img-macbook-pro-2019.jpg" alt = "MacBook Pro" class="images">  
                     <div>
@@ -62,7 +68,7 @@
                     </div> 
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt = "Samsung Galaxy s10" class="images">
                     <div>
@@ -73,7 +79,7 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-tv-samsung-smart.jpg" alt = "SmartTV Samsung" class="images">   
                     <div>
@@ -86,9 +92,9 @@
             </article>
         </section>
         <br>
-        <section>
-            <h2 class = "titulares">Ofertas</h2>
-            <article>
+        <h2 class = "titulares">Ofertas</h2>
+        <section class="elementos-basados">            
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-cafetera-moulinex.jpg" alt = "Cafetera Moulinex" class="images">
                     <div>
@@ -99,7 +105,7 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-macbook-pro-2019.jpg" alt = "MacBook Pro" class="images">   
                     <div>
@@ -110,7 +116,7 @@
                     </div> 
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt = "Samsung Galaxy s10" class="images">
                     <div>
@@ -121,7 +127,7 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="images-border">
                 <div class="border">
                     <img src="/images/img-tv-samsung-smart.jpg" alt = "SmartTV Samsung" class="images">   
                     <div>

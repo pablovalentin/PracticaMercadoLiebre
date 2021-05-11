@@ -2,6 +2,57 @@
   box-sizing: border-box;
 }
 
+.main-header {
+  padding: 20px;
+  background-color: #eac926;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+}
+
+.main-navbar {
+  display: none;
+}
+
+.main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+
+.copy-header {
+  font-weight: 400;
+  text-align: center;
+}
+
+.input-lupa {
+  width: 33%;
+  align-self: center;
+  box-sizing: border-box;
+}
+.cuotas {
+  text-align: center;
+}
+
+.subcabecera-top {
+  width: 50%;
+  display: flex;
+}
+
+.logo-liebrego {
+  width: 200px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -15,23 +66,20 @@ body {
 
 .precios {
   font-size: 18px;
-  margin: auto;
 }
 
 .descuento {
   font-size: 16px;
   color: #39b54a;
   margin: 1px;
+  padding-bottom: 5%;
 }
 
 .descripcion {
   font-size: 16px;
   display: none;
   color: #666;
-}
-
-header {
-  background-color: #eac926;
+  padding-bottom: 5%;
 }
 
 ul {
@@ -39,20 +87,12 @@ ul {
 }
 
 .fa-search {
-  background-size: 10px;
-  width: 25px;
+  background-size: 30px;
+  width: 200px;
   padding: 5px 5px 3px;
   margin-left: 1.1em;
-  margin-top: -1em;
+  margin-top: 0.5em;
   background-color: white;
-  border: 1px solid;
-}
-
-#Buscador {
-  background-size: 24px;
-  width: 240px;
-  padding: 5px 5px 3px;
-  margin-left: 0.8em;
   border: 1px solid;
 }
 
@@ -63,20 +103,27 @@ ul {
 
 .burger-menu {
   color: white;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
-  padding: 2px;
-  background-color: #1259c3;
+  background-color: #03264c;
+  display: block;
+  max-width: 50px;
+  font-size: 18px;
+  padding: 15px 0;
   text-align: center;
-  border-radius: 3px;
-  line-height: 42px;
+  border-radius: 8px;
+  margin: auto;
 }
 
 .images {
   width: 100%;
   height: auto;
+}
+
+.img-fiestas {
+  display: flex;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .icons {
@@ -89,7 +136,7 @@ footer h2 {
   text-align: center;
   font-weight: normal;
   font-size: 15px;
-  line-height: 0.2;
+  line-height: 1;
   margin-bottom: 0;
 }
 
@@ -120,12 +167,18 @@ article {
   padding: 8px;
   margin-top: 10px;
   margin-bottom: 0px;
+  display: block;
+  position: absolute;
+  right: 25px;
+  margin-top: -15px;
+  background-color: #fff;
 }
 
 .border {
   margin: 15px;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   background-color: white;
+  position: relative;
 }
 
 article div {
@@ -134,7 +187,30 @@ article div {
 }
 
 /* Tablets */
-@media (min-width: 361px) {
+@media (min-width: 700px) {
+  .main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copy-header {
+    max-width: 350px;
+    text-align: right;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+  }
+
+  .main-navbar li {
+    margin: 15px;
+  }
+
   .descripcion {
     display: block;
   }
@@ -143,11 +219,19 @@ article div {
   }
   .burger-menu {
     display: none;
+  }
+  .elementos-basados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .images-border {
+    width: 50%;
   }
 }
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1000) {
   .descripcion {
     display: block;
   }
@@ -156,5 +240,14 @@ article div {
   }
   ul {
     display: block;
+  }
+  .border {
+    max-width: 400px;
+  }
+  .titulares {
+    text-align: center;
+  }
+  .images-border {
+    width: 25%;
   }
 }
