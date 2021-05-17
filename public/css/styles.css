@@ -178,6 +178,10 @@ article {
   background-color: #fff;
 }
 
+.fa-credit-card {
+  margin-top: 25px;
+}
+
 .border {
   margin: 15px;
   background-color: white;
@@ -191,6 +195,105 @@ article {
 article div {
   margin: 15px;
   border-top: 1px solid #ebebeb;
+}
+
+.error-message {
+  color: red;
+  font-weight: 600;
+}
+
+.control-form-login {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.control-form-login label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.control {
+  width: 50%;
+  padding: 12px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.control-opt {
+  padding: 2px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.control-pic {
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+  padding: 7px 0px;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.checks {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.checks-in {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.button-login {
+  background-color: #1259c3;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.button-login:hover {
+  background-color: #223552;
+  color: #fff;
+}
+
+.botones {
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 12px;
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+  width: 50%;
+  height: 50%;
+}
+
+.login div {
+  text-align: center;
+}
+
+.leyendas-registro {
+  color: black;
+  font-size: 16px;
 }
 
 /* Tablets */
@@ -221,6 +324,7 @@ article div {
   /*   .descripcion {
     display: block;
   } */
+
   ul {
     display: block;
   }
@@ -254,6 +358,4 @@ article div {
   .description:hover {
     display: block;
   }
-
-  /*no anda?*/
 }

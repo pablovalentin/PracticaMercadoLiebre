@@ -46,59 +46,59 @@
         <form action="/register" method="POST" class="register-form">
             <label><h2>CREAR CUENTA</h2> </label>
             <div class="control-form-register">
-                <label>Nombre y Apellido:</label>
                 <input type="text" name="name" placeholder="Nombre" class="control" autofocus required>
             </div>
             <div class="control-form-register">
-                <label>Usuario:</label>
                 <input type="text" name="user" placeholder="Usuario" class="control" required>
             </div>
             <div class="control-form-register">
-                <label>Fecha de Nacimiento:</label>
+                <label class="leyendas-registro">Fecha de Nacimiento:</label><br>
                 <input type="date" name="date" class="control" required>
             </div>
             <div class="control-form-register">
-                <label>Domicilio:</label>
                 <input type="text" name="adress" placeholder="Domicilio" class="control" required>
             </div>
             <div class="control-form-register">
-                <label>Perfil de Usuario:</label>
+                <label class="leyendas-registro">Perfil de Usuario:</label>
                 <div>
-                    <input type="radio" name="profile" value="comprador" class="control">
+                    <input type="radio" name="profile" value="comprador" class="control-opt">
                     <label for="comprador">Comprador</label>
-                    <input type="radio" name="profile" value="vendedor" class="control">
+                    <input type="radio" name="profile" value="vendedor" class="control-opt">
                     <label for="vendedor">Vendedor</label>
                 </div>
             </div>
             <div class="control-form-register">
-                <label>Intereses:</label>
-                <div>
-                    <input type="checkbox" id="interes1" name="interes1" value="electro">
+                <label class="leyendas-registro">Intereses:</label>
+                <div class="checks">
+                    <input class="checks-in" type="checkbox" id="interes1" name="interes1" value="electro">
                     <label for="interes1"> Electro</label><br>
-                    <input type="checkbox" id="interes2" name="interes2" value="moda">
+                    <input class="checks-in" type="checkbox" id="interes2" name="interes2" value="moda">
                     <label for="interes2"> Moda</label><br>
-                    <input type="checkbox" id="interes3" name="interes3" value="electro">
+                    <input class="checks-in" type="checkbox" id="interes3" name="interes3" value="electro">
                     <label for="interes3"> Hogar</label><br>
-                    <input type="checkbox" id="interes4" name="interes4" value="electro">
+                    <input class="checks-in" type="checkbox" id="interes4" name="interes4" value="electro">
                     <label for="interes4"> Juguetería</label><br>
-                    <input type="checkbox" id="interes4" name="interes4" value="electro">
+                    <input class="checks-in" type="checkbox" id="interes4" name="interes4" value="electro">
                     <label for="interes4"> Vida sana</label><br>
                 </div>
             </div>
             <div class="control-form-register">
-                <label for="myfile">Foto de Perfil:</label>
-                <input type="file" id="myfile" name="myfile">
+                <br>
+                <label class="leyendas-registro" for="myfile">Foto de Perfil:</label>
+                <div>
+                    <input type="file" id="myfile" name="myfile" class="control-pic">
+                </div>
             </div>
             <div class="control-form-register">
-                <label>Contraseña:</label>
                 <input type="password" name="pasword" placeholder="Contraseña" class="control" required>
             </div>
             <div class="control-form-register">
-                <label>Confirmar contraseña:</label>
                 <input type="password" name="pasword-confirmation" placeholder="Contraseña" class="control" required>
+                <span class="error-message">Las contraseñas no coinciden</span>
             </div>
             <div class="botones">
-                <input type="submit" value="Enviar">  VER LO DEL ACTION PARA PARA VOLVER AL HOME
+                <br>
+                <input type="submit" value="Enviar"> 
                 <input type="submit" value="Borrar">
             </div>
         </form>
