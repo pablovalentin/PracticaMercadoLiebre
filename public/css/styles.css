@@ -108,14 +108,66 @@ ul {
 
 .burger-menu {
   color: white;
-  background-color: #03264c;
-  display: block;
-  max-width: 50px;
-  font-size: 18px;
-  padding: 15px 0;
-  text-align: center;
-  border-radius: 8px;
   margin: auto;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  padding: 3px;
+  background-color: #03264c;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 42px;
+}
+
+.dropbtn-burger {
+  background-color: #eac926;
+  color: #484747;
+  font-size: 24px;
+  border: none;
+}
+
+.div-burger {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(204, 198, 198);
+  padding: 3px;
+}
+
+.dropdown-burger:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-burger:hover .dropbtn {
+  background-color: rgb(204, 198, 198);
+  padding: 3px;
 }
 
 .images {
@@ -242,7 +294,17 @@ article div {
   margin-bottom: 15px;
 }
 
+.control-search {
+  display: flex;
+  width: 102%;
+  padding: 12px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 15px;
+  align-content: space-around;
+}
 .control-opt {
+  display: flex;
   padding: 2px;
   text-align: left;
   margin-top: 15px;
@@ -260,6 +322,17 @@ article div {
   margin-top: 15px;
   margin-bottom: 10px;
   color: grey;
+}
+
+.selects {
+  display: flex;
+  padding: 15;
+  align-items: center;
+}
+
+.selects label {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .checks {
@@ -289,7 +362,7 @@ article div {
 }
 
 .button-login:hover {
-  background-color: #0022aa;
+  background-color: #223552;
   color: #fff;
 }
 
@@ -315,6 +388,13 @@ article div {
   font-size: 16px;
 }
 
+.control-form-register {
+  display: flex;
+  width: 95%;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
 /* Tablets */
 @media (min-width: 700px) {
   .main-header-top-bar {
@@ -325,6 +405,10 @@ article div {
   .copy-header {
     max-width: 350px;
     text-align: right;
+  }
+
+  .control-search {
+    margin-left: 20px;
   }
 
   .main-navbar {
@@ -339,10 +423,6 @@ article div {
   .main-navbar li {
     margin: 15px;
   }
-
-  /*   .descripcion {
-    display: block;
-  } */
 
   ul {
     display: block;
