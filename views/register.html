@@ -11,11 +11,10 @@
     </head>
 <body>
     <header class="main-header">
-        <div class="main-header-top-bar">
-            <img src="/images/logo-mercado-liebre.svg" class="logo"> 
-            <div class="input-lupa">
-                <input type="search" placeholder="Buscar productos, marcas" id="Buscador" />
-                <i class="fas fa-search"></i>
+        <div class="main-header-top-bar">            
+            <div class="control-form-register">
+                <a title="principio" href="/"><img src="/images/logo-mercado-liebre.svg" class="logo"></a>
+                <input type="text" name="name" placeholder="Buscar productos, marcas y más" class="control-search" autofocus required>
             </div>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i> 
@@ -47,7 +46,7 @@
             <ul class="right-bar">
                 <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                 <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="/mis-compras">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+                <li><a href="/mis-compras">Mis Compras <i class="fas fa-shopping-basket"></i></li><a></li>
             </ul>
         </nav>
         <br>
@@ -56,20 +55,20 @@
         <!-- Formulario registro -->
         <form action="/register" method="POST" class="register-form">
             <label><h2>CREAR CUENTA</h2> </label>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <input type="text" name="name" placeholder="Nombre" class="control" autofocus required>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <input type="text" name="user" placeholder="Usuario" class="control" required>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <label class="leyendas-registro">Fecha de Nacimiento:</label>          
                 <input type="date" name="date" class="control" required>                
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <input type="text" name="adress" placeholder="Domicilio" class="control" required>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <label class="leyendas-registro">Perfil de Usuario:</label>
                     <div class="selects">
                         <input type="radio" name="profile" value="comprador" class="control-opt">
@@ -78,7 +77,7 @@
                         <label for="vendedor">Vendedor</label>
                     </div>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <label class="leyendas-registro">Intereses:</label>
                 <div class="checks">
                     <input class="checks-in" type="checkbox" id="interes1" name="interes1" value="electro">
@@ -93,17 +92,17 @@
                     <label for="interes4"> Vida sana</label><br>
                 </div>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <br>
                 <label class="leyendas-registro" for="myfile">Foto de Perfil:</label>
                 <div>
                     <input type="file" id="myfile" name="myfile" class="control-pic">
                 </div>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <input type="password" name="pasword" placeholder="Contraseña" class="control" required>
             </div>
-            <div class="control-form-register">
+            <div class="control-form-register-reg">
                 <input type="password" name="pasword-confirmation" placeholder="Contraseña" class="control" required>
                 <span class="error-message">Las contraseñas no coinciden</span>
             </div>
